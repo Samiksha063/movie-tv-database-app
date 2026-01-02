@@ -40,3 +40,8 @@
 .button:hover{
     background-color: var(--color-primary-hover);
 }
+
+.loginState{
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
