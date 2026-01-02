@@ -1,0 +1,11 @@
+.remembermeContainer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 8px;
+}
+
+.checkbox{
+    width: auto; 
+    margin: 0;
+}
