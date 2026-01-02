@@ -20,6 +20,7 @@ export default function Header(){
                             <li><Link to = "/tvshows" className={styles.navLinks}>Tv Shows</Link></li> 
                             <li><Link to = "/watchlist" className={styles.navLinks}>Watchlist</Link></li>
                             <li><Link to = "/login" className={styles.navLinks}>Login</Link></li>
+                            <li><Link to= "/register" className={styles.navLinkRegister}>Register</Link></li>
                         </div>
                     </ul>
                 </nav>

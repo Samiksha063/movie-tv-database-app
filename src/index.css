@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root{
+    --color-primary: #032541;
+    --color-primary-hover: #0A4A78;
+}
+
 body{
 font-family: "DM Sans", sans-serif;
 }
