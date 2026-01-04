@@ -11,6 +11,7 @@ export default function Register(){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+    const [error, setError] = useState("");
 
     const register = useAuthStore((state) => state.register);
 
@@ -20,18 +21,19 @@ export default function Register(){
         e.preventDefault();
 
         if(!username || !email || !password || !confirmPassword){
-            alert("All fields are required to be filled");
+            setError("All fields are required to be filled");
+            return;
         }
 
         if(password != confirmPassword){
-            alert("Password doesnot match");
+            setError("Password doesnot match");
             return;
         }
 
         const success = register(username, email, password);
 
         if(!success){
-            alert("Email already exists. Try Logging in");
+            setError("Email already exists. Try Logging in");
             return;
         }else{
             alert("Registration Successful!");
@@ -61,6 +63,8 @@ export default function Register(){
                 <input type="password" id="confirmPassword" name="confirmPassword" className={formStyles.input} value={confirmPassword} onChange={(e)=> setConfirmPassword(e.target.value)}/>
 
                 <p className={formStyles.loginState}>Already have an account? <Link to="/login" className={styles.loginLink}>Login</Link></p>
+
+                <p className={formStyles.error}>{error}</p>
 
                 <button type="submit" className={formStyles.button}>Register</button>
             </div>
