@@ -30,7 +30,7 @@ export default function Register(){
             return;
         }
 
-        const success = register(username, email, password);
+        const success = register(email, password, username);
 
         if(!success){
             setError("Email already exists. Try Logging in");

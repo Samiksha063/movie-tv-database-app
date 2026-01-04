@@ -9,9 +9,10 @@ type User ={
 type AuthStore = {
     user: User | null;
     register: (email: string, password: string, username: string) => boolean;
+    login: (email: string, password: string) => string;
 }
 
-export const useAuthStore = create<AuthStore>(()=>({
+export const useAuthStore = create<AuthStore>((set)=>({
     user: null,
     register: (email,password, username) => {
         //getting existing users from local storage
@@ -31,5 +32,23 @@ export const useAuthStore = create<AuthStore>(()=>({
 
         return true;
 
+    },
+
+    login: (email, password) => {
+        //getting user from localstorage
+        const users: User[] = JSON.parse(localStorage.getItem("users") || "[]");
+
+        const user = users.find(u=> u.email === email);
+        
+        if(!user){
+            return "not-registered";
+        }
+
+        if(user.password !== password){
+            return "wrong-password";
+        }
+
+        set({user});
+        return "success";
     }
 }));
