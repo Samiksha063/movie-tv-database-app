@@ -12,6 +12,7 @@ type AuthStore = {
     user: User | null;
     register: (email: string, password: string, username: string) => boolean;
     login: (email: string, password: string, rememberMe: boolean) => string;
+    logout: () => void;
 }
 
 export const useAuthStore = create<AuthStore>((set)=>({
@@ -57,5 +58,10 @@ export const useAuthStore = create<AuthStore>((set)=>({
         }
 
         return "success";
+    },
+
+    logout: () => {
+        set({user: null});
+        localStorage.removeItem("loggedInUser");
     }
 }));

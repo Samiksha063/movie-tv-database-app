@@ -46,7 +46,8 @@ ul li{
     color: #ff6347;
 }
 
-.navLinkRegister{
+.navLinkRegister, .logout{
+    border: none;
     background-color: white;
     color: var(--color-primary);
     text-decoration: none;
@@ -57,7 +58,7 @@ ul li{
     transition: background-color 0.3s, color 0.3s;
 }
 
-.navLinkRegister:hover{
+.navLinkRegister:hover, .logout:hover{
     background-color: #ff6347;
     color: white;
 }
