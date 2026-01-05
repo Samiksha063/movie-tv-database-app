@@ -9,6 +9,7 @@ export default function Login(){
     const [email, setEmail] = useState("");
     const[password, setPassword] = useState("");
     const[error, setError] = useState("");
+    const[rememberMe, setRememberMe] = useState(false);
 
     const login = useAuthStore((state) => state.login );
 
@@ -23,7 +24,7 @@ export default function Login(){
         return;
         }
 
-        const result = login(email,password);
+        const result = login(email,password, rememberMe);
 
         if(result === "not-registered"){
             setError("User doesnot exist. Register now");
@@ -57,7 +58,7 @@ export default function Login(){
                 <input type="password" id="password" name="password" className={formStyles.input} value={password} onChange={(e)=>{setPassword(e.target.value);}}/>
 
                 <div className={styles.remembermeContainer}>
-                    <input type="checkbox" id="rememberme" name="rememberme" className={styles.checkbox}/>
+                    <input type="checkbox" id="rememberme" name="rememberme" className={styles.checkbox} checked={rememberMe} onChange={(e)=>setRememberMe(e.target.checked)}/>
                     <label htmlFor="rememberme">Remember me</label>
                 </div>
 
