@@ -6,6 +6,9 @@
 .header{
     padding: 15px 25px;
     background-color: var(--color-primary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .header ul{
