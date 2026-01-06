@@ -8,7 +8,7 @@
     background-color: var(--color-primary);
 }
 
-ul{
+.header ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,7 +30,7 @@ ul{
     align-items: center;
 }
 
-ul li{
+.header ul li{
     list-style: none;
 }
 

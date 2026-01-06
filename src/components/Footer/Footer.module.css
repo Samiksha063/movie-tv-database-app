@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.footer{
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px 30px;
+}
+
+.quickLinks ul li, .socialLinks ul li{
+    list-style: none;
+}
+
+.brand, .quickLinks, .socialLinks{
+    color: white;
+}
+
+.logo, .quickLink{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.quickLinks, .socialLinks{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.quickLink{
+    font-weight: lighter;
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+
+.linkText{
+    margin-bottom: 8px;
+}
+
+.socialLinks ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.socialLink{
+    font-size: 28px;
+}
