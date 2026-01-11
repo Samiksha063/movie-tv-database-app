@@ -1,7 +1,11 @@
-// header, introduction, featured movies, trending movies
+import styles from './Home.module.css'
+import MovieSlider from '../../components/Welcome/MovieSlider';
 export default function Home(){
     return(
-        <h1>Home page</h1>
-        
-    ) 
+        <>
+            <MovieSlider />
+
+        </>
+            
+    );
 }
