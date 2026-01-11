@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import styles from './Welcome.module.css';
-import {slides} from './MovieSlider';
-export default function Welcome(){
+import styles from './MovieSlider.module.css';
+import {slides} from './MovieSliderData';
+export default function MovieSlider(){
 
     const[currentIndex, setCurrentIndex] = useState(0);
 
