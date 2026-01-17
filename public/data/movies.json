@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "tagline": "Your mind is the scene of the crime.",
+    "description": "A skilled thief enters people's dreams to steal secrets and is given a chance to erase his criminal past by planting an idea instead.",
+    "releaseDate": "2010-07-16",
+    "releaseYear": 2010,
+    "runtime": 148,
+    "genres": ["Action", "Science Fiction", "Thriller"],
+    "rating": { "average": 8.8, "voteCount": 21000, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/inception.jpg",
+    "backdropUrl": "/images/movies/inception-backdrop.jpg",
+    "director": { "name": "Christopher Nolan" },
+    "cast": [
+      { "name": "Leonardo DiCaprio", "character": "Dom Cobb" },
+      { "name": "Joseph Gordon-Levitt", "character": "Arthur" },
+      { "name": "Tom Hardy", "character": "Eames" }
+    ],
+    "gallery": [
+      "/images/movies/inception-1.jpg",
+      "/images/movies/inception-2.jpg"
+    ],
+    "trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0"
+  },
+
+  {
+    "id": 2,
+    "title": "Interstellar",
+    "tagline": "Mankind was born on Earth. It was never meant to die here.",
+    "description": "A group of astronauts travels through a wormhole in search of a new home for humanity.",
+    "releaseDate": "2014-11-07",
+    "releaseYear": 2014,
+    "runtime": 169,
+    "genres": ["Adventure", "Drama", "Science Fiction"],
+    "rating": { "average": 8.6, "voteCount": 18000, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/interstellar.jpg",
+    "backdropUrl": "/images/movies/interstellar-backdrop.jpg",
+    "director": { "name": "Christopher Nolan" },
+    "cast": [
+      { "name": "Matthew McConaughey", "character": "Cooper" },
+      { "name": "Anne Hathaway", "character": "Brand" }
+    ],
+    "gallery": ["/images/movies/interstellar-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=zSWdZVtXT7E"
+  },
+
+  {
+    "id": 3,
+    "title": "The Dark Knight",
+    "tagline": "Why so serious?",
+    "description": "Batman faces his greatest psychological challenge when the Joker wreaks havoc on Gotham City.",
+    "releaseDate": "2008-07-18",
+    "releaseYear": 2008,
+    "runtime": 152,
+    "genres": ["Action", "Crime", "Drama"],
+    "rating": { "average": 9.0, "voteCount": 25000, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/the-dark-knight.jpg",
+    "backdropUrl": "/images/movies/dark-knight-backdrop.jpg",
+    "director": { "name": "Christopher Nolan" },
+    "cast": [
+      { "name": "Christian Bale", "character": "Bruce Wayne" },
+      { "name": "Heath Ledger", "character": "Joker" }
+    ],
+    "gallery": ["/images/movies/dark-knight-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY"
+  },
+
+  {
+    "id": 4,
+    "title": "Avatar",
+    "tagline": "Enter the world of Pandora.",
+    "description": "A paraplegic Marine is sent to the moon Pandora and becomes torn between following orders and protecting a new world.",
+    "releaseDate": "2009-12-18",
+    "releaseYear": 2009,
+    "runtime": 162,
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "rating": { "average": 7.9, "voteCount": 23000, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/avatar.jpg",
+    "backdropUrl": "/images/movies/avatar-backdrop.jpg",
+    "director": { "name": "James Cameron" },
+    "cast": [
+      { "name": "Sam Worthington", "character": "Jake Sully" },
+      { "name": "Zoe Saldana", "character": "Neytiri" }
+    ],
+    "gallery": ["/images/movies/avatar-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=5PSNL1qE6VY"
+  },
+
+  {
+    "id": 5,
+    "title": "Titanic",
+    "tagline": "Nothing on Earth could come between them.",
+    "description": "A young couple from different social classes fall in love aboard the ill-fated RMS Titanic.",
+    "releaseDate": "1997-12-19",
+    "releaseYear": 1997,
+    "runtime": 195,
+    "genres": ["Drama", "Romance"],
+    "rating": { "average": 7.8, "voteCount": 20000, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/titanic.jpg",
+    "backdropUrl": "/images/movies/titanic-backdrop.jpg",
+    "director": { "name": "James Cameron" },
+    "cast": [
+      { "name": "Leonardo DiCaprio", "character": "Jack Dawson" },
+      { "name": "Kate Winslet", "character": "Rose DeWitt Bukater" }
+    ],
+    "gallery": ["/images/movies/titanic-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=2e-eXJ6HgkQ"
+  },
+
+  {
+    "id": 6,
+    "title": "Avengers: Endgame",
+    "tagline": "Part of the journey is the end.",
+    "description": "The Avengers assemble once more to undo Thanos' destruction and restore balance to the universe.",
+    "releaseDate": "2019-04-26",
+    "releaseYear": 2019,
+    "runtime": 181,
+    "genres": ["Action", "Adventure", "Science Fiction"],
+    "rating": { "average": 8.4, "voteCount": 24000, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/avenger-end-game.jpg",
+    "backdropUrl": "/images/movies/endgame-backdrop.jpg",
+    "director": { "name": "Russo Brothers" },
+    "cast": [
+      { "name": "Robert Downey Jr.", "character": "Iron Man" },
+      { "name": "Chris Evans", "character": "Captain America" }
+    ],
+    "gallery": ["/images/movies/endgame-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=TcMBFSGVi1c"
+  },
+
+  {
+    "id": 7,
+    "title": "Joker",
+    "tagline": "Put on a happy face.",
+    "description": "A mentally troubled comedian descends into madness and becomes Gotham's most feared criminal.",
+    "releaseDate": "2019-10-04",
+    "releaseYear": 2019,
+    "runtime": 122,
+    "genres": ["Crime", "Drama", "Thriller"],
+    "rating": { "average": 8.5, "voteCount": 22000, "ageRating": "R" },
+    "posterUrl": "/images/movies/joker.jpg",
+    "backdropUrl": "/images/movies/joker-backdrop.jpg",
+    "director": { "name": "Todd Phillips" },
+    "cast": [
+      { "name": "Joaquin Phoenix", "character": "Arthur Fleck" }
+    ],
+    "gallery": ["/images/movies/joker-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=zAGVQLHvwOY"
+  },
+
+  {
+    "id": 8,
+    "title": "The Matrix",
+    "tagline": "Welcome to the Real World.",
+    "description": "A hacker discovers reality is a simulation and joins a rebellion against machines.",
+    "releaseDate": "1999-03-31",
+    "releaseYear": 1999,
+    "runtime": 136,
+    "genres": ["Action", "Science Fiction"],
+    "rating": { "average": 8.7, "voteCount": 19000, "ageRating": "R" },
+    "posterUrl": "/images/movies/matrix.jpg",
+    "backdropUrl": "/images/movies/matrix-backdrop.jpg",
+    "director": { "name": "Wachowski Sisters" },
+    "cast": [
+      { "name": "Keanu Reeves", "character": "Neo" },
+      { "name": "Laurence Fishburne", "character": "Morpheus" }
+    ],
+    "gallery": ["/images/movies/matrix-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=vKQi3bBA1y8"
+  },
+
+  {
+    "id": 9,
+    "title": "Forrest Gump",
+    "tagline": "Life is like a box of chocolates.",
+    "description": "A simple man unintentionally influences major historical events while pursuing his true love.",
+    "releaseDate": "1994-07-06",
+    "releaseYear": 1994,
+    "runtime": 142,
+    "genres": ["Drama", "Romance"],
+    "rating": { "average": 8.8, "voteCount": 20000, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/forest-gump.jpg",
+    "backdropUrl": "/images/movies/forrest-gump-backdrop.jpg",
+    "director": { "name": "Robert Zemeckis" },
+    "cast": [
+      { "name": "Tom Hanks", "character": "Forrest Gump" }
+    ],
+    "gallery": ["/images/movies/forrest-gump-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=bLvqoHBptjg"
+  },
+
+  {
+    "id": 10,
+    "title": "Gladiator",
+    "tagline": "What we do in life echoes in eternity.",
+    "description": "A betrayed Roman general seeks revenge against the corrupt emperor who murdered his family.",
+    "releaseDate": "2000-05-05",
+    "releaseYear": 2000,
+    "runtime": 155,
+    "genres": ["Action", "Drama"],
+    "rating": { "average": 8.5, "voteCount": 17000, "ageRating": "R" },
+    "posterUrl": "/images/movies/gladiator.jpg",
+    "backdropUrl": "/images/movies/gladiator-backdrop.jpg",
+    "director": { "name": "Ridley Scott" },
+    "cast": [
+      { "name": "Russell Crowe", "character": "Maximus" }
+    ],
+    "gallery": ["/images/movies/gladiator-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=owK1qxDselE"
+  }
+]

@@ -1,0 +1,21 @@
+.detail {
+  text-align: center;
+  padding: 16px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.poster {
+  width: 200px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.genre {
+  font-size: 14px;
+  color: #555;
+}
