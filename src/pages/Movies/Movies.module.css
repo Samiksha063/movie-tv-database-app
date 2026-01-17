@@ -1,13 +1,32 @@
-.page {
-  padding: 20px;
+.mainContainer {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    align-items: start;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 20px;
+.filterPanel {
+    position: sticky;
+    top: 20px;
+}
+
+.moviesContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .heading {
-  margin-bottom: 16px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 25px 20px; 
 }

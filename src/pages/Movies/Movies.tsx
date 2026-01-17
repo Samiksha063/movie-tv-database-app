@@ -4,6 +4,7 @@ import { getAllMovies } from "../../dao/movies.dao";
 import { seedMoviesDB } from "../../services/movies.service";
 
 import MovieCard from '../../components/MovieCard/MovieCard';
+import FilterPanel from "../../components/FilterPanel/FilterPanel";
 import styles from './Movies.module.css';
 
 export default function Movies(){
@@ -20,14 +21,22 @@ export default function Movies(){
     },[]);
 
     return (
-    <div className={styles.page}>
-      <h2 className={styles.heading}>Movies</h2>
+      <div className={styles.mainContainer}>
 
-      <div className={styles.grid}>
-        {movies.map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
-        ))}
-      </div>
+        <aside className={styles.filterPanel}>
+          <FilterPanel />
+        </aside>
+
+        <main className={styles.moviesContent}>
+          {/* <h2 className={styles.heading}>Movies</h2> */}
+          <div className={styles.grid}>
+
+            {movies.map((movie) => (
+              <MovieCard key={movie.id} movie={movie} />
+            ))}
+
+          </div>
+        </main>
       </div>
   );
 
