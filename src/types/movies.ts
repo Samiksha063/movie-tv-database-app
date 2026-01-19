@@ -13,6 +13,6 @@ export type Movie = {
     director: { name: string };
     cast: { name: string; character: string; profileUrl?: string }[];
     gallery?: string[];
-    trailer?: string;
+    trailer: string;
     popularity?: number;
 }
