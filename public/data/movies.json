@@ -17,13 +17,10 @@
       { "name": "Joseph Gordon-Levitt", "character": "Arthur" },
       { "name": "Tom Hardy", "character": "Eames" }
     ],
-    "gallery": [
-      "/images/movies/inception-1.jpg",
-      "/images/movies/inception-2.jpg"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0"
+    "gallery": ["/images/movies/inception-1.jpg", "/images/movies/inception-2.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0",
+    "category": "popular"
   },
-
   {
     "id": 2,
     "title": "Interstellar",
@@ -42,9 +39,9 @@
       { "name": "Anne Hathaway", "character": "Brand" }
     ],
     "gallery": ["/images/movies/interstellar-1.jpg"],
-    "trailer": "https://www.youtube.com/watch?v=zSWdZVtXT7E"
+    "trailer": "https://www.youtube.com/watch?v=zSWdZVtXT7E",
+    "category": "popular"
   },
-
   {
     "id": 3,
     "title": "The Dark Knight",
@@ -63,9 +60,9 @@
       { "name": "Heath Ledger", "character": "Joker" }
     ],
     "gallery": ["/images/movies/dark-knight-1.jpg"],
-    "trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY"
+    "trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
+    "category": "popular"
   },
-
   {
     "id": 4,
     "title": "Avatar",
@@ -84,9 +81,9 @@
       { "name": "Zoe Saldana", "character": "Neytiri" }
     ],
     "gallery": ["/images/movies/avatar-1.jpg"],
-    "trailer": "https://www.youtube.com/watch?v=5PSNL1qE6VY"
+    "trailer": "https://www.youtube.com/watch?v=5PSNL1qE6VY",
+    "category": "popular"
   },
-
   {
     "id": 5,
     "title": "Titanic",
@@ -105,9 +102,9 @@
       { "name": "Kate Winslet", "character": "Rose DeWitt Bukater" }
     ],
     "gallery": ["/images/movies/titanic-1.jpg"],
-    "trailer": "https://www.youtube.com/watch?v=2e-eXJ6HgkQ"
+    "trailer": "https://www.youtube.com/watch?v=2e-eXJ6HgkQ",
+    "category": "popular"
   },
-
   {
     "id": 6,
     "title": "Avengers: Endgame",
@@ -126,9 +123,9 @@
       { "name": "Chris Evans", "character": "Captain America" }
     ],
     "gallery": ["/images/movies/endgame-1.jpg"],
-    "trailer": "https://www.youtube.com/watch?v=TcMBFSGVi1c"
+    "trailer": "https://www.youtube.com/watch?v=TcMBFSGVi1c",
+    "category": "popular"
   },
-
   {
     "id": 7,
     "title": "Joker",
@@ -142,13 +139,11 @@
     "posterUrl": "/images/movies/joker.jpg",
     "backdropUrl": "/images/movies/joker-backdrop.jpg",
     "director": { "name": "Todd Phillips" },
-    "cast": [
-      { "name": "Joaquin Phoenix", "character": "Arthur Fleck" }
-    ],
+    "cast": [{ "name": "Joaquin Phoenix", "character": "Arthur Fleck" }],
     "gallery": ["/images/movies/joker-1.jpg"],
-    "trailer": "https://www.youtube.com/watch?v=zAGVQLHvwOY"
+    "trailer": "https://www.youtube.com/watch?v=zAGVQLHvwOY",
+    "category": "popular"
   },
-
   {
     "id": 8,
     "title": "The Matrix",
@@ -167,9 +162,9 @@
       { "name": "Laurence Fishburne", "character": "Morpheus" }
     ],
     "gallery": ["/images/movies/matrix-1.jpg"],
-    "trailer": "https://www.youtube.com/watch?v=vKQi3bBA1y8"
+    "trailer": "https://www.youtube.com/watch?v=vKQi3bBA1y8",
+    "category": "popular"
   },
-
   {
     "id": 9,
     "title": "Forrest Gump",
@@ -183,13 +178,11 @@
     "posterUrl": "/images/movies/forest-gump.jpg",
     "backdropUrl": "/images/movies/forrest-gump-backdrop.jpg",
     "director": { "name": "Robert Zemeckis" },
-    "cast": [
-      { "name": "Tom Hanks", "character": "Forrest Gump" }
-    ],
+    "cast": [{ "name": "Tom Hanks", "character": "Forrest Gump" }],
     "gallery": ["/images/movies/forrest-gump-1.jpg"],
-    "trailer": "https://www.youtube.com/watch?v=bLvqoHBptjg"
+    "trailer": "https://www.youtube.com/watch?v=bLvqoHBptjg",
+    "category": "popular"
   },
-
   {
     "id": 10,
     "title": "Gladiator",
@@ -203,10 +196,219 @@
     "posterUrl": "/images/movies/gladiator.jpg",
     "backdropUrl": "/images/movies/gladiator-backdrop.jpg",
     "director": { "name": "Ridley Scott" },
-    "cast": [
-      { "name": "Russell Crowe", "character": "Maximus" }
-    ],
+    "cast": [{ "name": "Russell Crowe", "character": "Maximus" }],
     "gallery": ["/images/movies/gladiator-1.jpg"],
-    "trailer": "https://www.youtube.com/watch?v=owK1qxDselE"
+    "trailer": "https://www.youtube.com/watch?v=owK1qxDselE",
+    "category": "popular"
+  },
+  {
+    "id": 11,
+    "title": "RRR",
+    "tagline": "Rise Roar Revolt",
+    "description": "Two legendary revolutionaries fight against colonial rule in 1920s India.",
+    "releaseDate": "2022-03-25",
+    "releaseYear": 2022,
+    "runtime": 187,
+    "genres": ["Action", "Drama", "History"],
+    "rating": { "average": 8.2, "voteCount": 9000, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/rrr.jpg",
+    "backdropUrl": "/images/movies/rrr-backdrop.jpg",
+    "director": { "name": "S.S. Rajamouli" },
+    "cast": [
+      { "name": "N.T. Rama Rao Jr.", "character": "Komaram Bheem" },
+      { "name": "Ram Charan", "character": "Alluri Sitarama Raju" }
+    ],
+    "gallery": ["/images/movies/rrr-1.jpg", "/images/movies/rrr-2.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=GY4BgdUSpbE",
+    "category": "popular"
+  },
+  {
+    "id": 12,
+    "title": "Pathaan",
+    "tagline": "India's top spy is back",
+    "description": "An Indian spy must stop a terrorist plot threatening national security.",
+    "releaseDate": "2023-01-25",
+    "releaseYear": 2023,
+    "runtime": 165,
+    "genres": ["Action", "Thriller"],
+    "rating": { "average": 7.9, "voteCount": 8000, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/pathaan.jpg",
+    "backdropUrl": "/images/movies/pathaan-backdrop.jpg",
+    "director": { "name": "Siddharth Anand" },
+    "cast": [
+      { "name": "Shah Rukh Khan", "character": "Pathaan" },
+      { "name": "Deepika Padukone", "character": "Rubina" }
+    ],
+    "gallery": ["/images/movies/pathaan-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=vqu4z34wENw",
+    "category": "nowPlaying"
+  },
+  {
+    "id": 13,
+    "title": "Spider-Man: Across the Spider-Verse",
+    "tagline": "The Multiverse is Bigger than Ever",
+    "description": "Miles Morales embarks on a new adventure across the Spider-Verse.",
+    "releaseDate": "2023-06-02",
+    "releaseYear": 2023,
+    "runtime": 140,
+    "genres": ["Animation", "Action", "Adventure"],
+    "rating": { "average": 8.5, "voteCount": 12000, "ageRating": "PG" },
+    "posterUrl": "/images/movies/spiderman-across-the-spiderverse.jpg",
+    "backdropUrl": "/images/movies/spiderman-across-backdrop.jpg",
+    "director": { "name": "Joaquim Dos Santos" },
+    "cast": [
+      { "name": "Shameik Moore", "character": "Miles Morales" },
+      { "name": "Hailee Steinfeld", "character": "Gwen Stacy" }
+    ],
+    "gallery": ["/images/movies/spiderman-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=cqGjhVJWtEg",
+    "category": "nowPlaying"
+  },
+  {
+    "id": 14,
+    "title": "Dune: Part Two",
+    "tagline": "The Saga Continues",
+    "description": "Paul Atreides continues his journey to avenge his family and unite Arrakis.",
+    "releaseDate": "2026-03-20",
+    "releaseYear": 2026,
+    "runtime": 155,
+    "genres": ["Action", "Adventure", "Science Fiction"],
+    "rating": { "average": 0, "voteCount": 0, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/dune2.jpg",
+    "backdropUrl": "/images/movies/dune-2-backdrop.jpg",
+    "director": { "name": "Denis Villeneuve" },
+    "cast": [
+      { "name": "Timothée Chalamet", "character": "Paul Atreides" },
+      { "name": "Zendaya", "character": "Chani" }
+    ],
+    "gallery": ["/images/movies/dune-2-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=Way9Dexny3w",
+    "category": "upcoming"
+  },
+  {
+    "id": 15,
+    "title": "Black Panther: Wakanda Forever",
+    "tagline": "The Legacy Continues",
+    "description": "The nation of Wakanda faces new threats after King T'Challa's death.",
+    "releaseDate": "2022-11-11",
+    "releaseYear": 2022,
+    "runtime": 161,
+    "genres": ["Action", "Adventure", "Drama"],
+    "rating": { "average": 7.3, "voteCount": 14000, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/black-panther-wakanda-forever.jpg",
+    "backdropUrl": "/images/movies/black-panther-2-backdrop.jpg",
+    "director": { "name": "Ryan Coogler" },
+    "cast": [
+      { "name": "Letitia Wright", "character": "Shuri" },
+      { "name": "Angela Bassett", "character": "Queen Ramonda" }
+    ],
+    "gallery": ["/images/movies/black-panther-2-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=_Z3QKkl1WyM",
+    "category": "popular"
+  },
+  {
+    "id": 16,
+    "title": "Jawan",
+    "tagline": "A Soldier’s Duty",
+    "description": "An Indian army officer must uncover a terrorist conspiracy threatening the nation.",
+    "releaseDate": "2023-09-07",
+    "releaseYear": 2023,
+    "runtime": 165,
+    "genres": ["Action", "Thriller"],
+    "rating": { "average": 8.0, "voteCount": 9000, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/jawan.jpg",
+    "backdropUrl": "/images/movies/jawan-backdrop.jpg",
+    "director": { "name": "Atlee" },
+    "cast": [
+      { "name": "Shah Rukh Khan", "character": "Vikram Rathore" },
+      { "name": "Nayanthara", "character": "Isha" }
+    ],
+    "gallery": ["/images/movies/jawan-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=MWOlnZSnXJo",
+    "category": "nowPlaying"
+  },
+  {
+    "id": 17,
+    "title": "Mission Impossible 8",
+    "tagline": "Impossible is just the beginning.",
+    "description": "Ethan Hunt returns for another high-stakes mission that takes him across the globe, facing impossible odds.",
+    "releaseDate": "2026-07-15",
+    "releaseYear": 2026,
+    "runtime": 165,
+    "genres": ["Action", "Thriller"],
+    "rating": { "average": 0, "voteCount": 0, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/mission-impossible8.jpg",
+    "backdropUrl": "/images/movies/mission-impossible-8-backdrop.jpg",
+    "director": { "name": "Christopher McQuarrie" },
+    "cast": [
+      { "name": "Tom Cruise", "character": "Ethan Hunt" },
+      { "name": "Rebecca Ferguson", "character": "Ilsa Faust" }
+    ],
+    "gallery": ["/images/movies/mission-impossible-8-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=fsQgc9pCyDU",
+    "category": "upcoming"
+  },
+  {
+    "id": 18,
+    "title": "Pathaan 2",
+    "tagline": "India’s Top Agent Returns",
+    "description": "Sequel to Pathaan, facing a new global threat.",
+    "releaseDate": "2026-02-14",
+    "releaseYear": 2026,
+    "runtime": 160,
+    "genres": ["Action", "Thriller"],
+    "rating": { "average": 0, "voteCount": 0, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/pathaan2.jpg",
+    "backdropUrl": "/images/movies/pathaan-2-backdrop.jpg",
+    "director": { "name": "Siddharth Anand" },
+    "cast": [
+      { "name": "Shah Rukh Khan", "character": "Pathaan" },
+      { "name": "Deepika Padukone", "character": "Rubina" }
+    ],
+    "gallery": ["/images/movies/pathaan-2-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=vMxeTLDqjNs",
+    "category": "upcoming"
+  },
+  {
+    "id": 19,
+    "title": "The Batman",
+    "tagline": "The Dark Knight Returns",
+    "description": "Bruce Wayne faces a new threat in Gotham City.",
+    "releaseDate": "2022-03-04",
+    "releaseYear": 2022,
+    "runtime": 175,
+    "genres": ["Action", "Crime", "Thriller"],
+    "rating": { "average": 8.3, "voteCount": 11000, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/the-batman.jpg",
+    "backdropUrl": "/images/movies/the-batman-backdrop.jpg",
+    "director": { "name": "Matt Reeves" },
+    "cast": [
+      { "name": "Robert Pattinson", "character": "Bruce Wayne" },
+      { "name": "Zoë Kravitz", "character": "Selina Kyle" }
+    ],
+    "gallery": ["/images/movies/the-batman-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=mqqft2x_Aa4",
+    "category": "popular"
+  },
+  {
+    "id": 20,
+    "title": "Doctor Strange: Multiverse of Madness",
+    "tagline": "Reality is Fractured",
+    "description": "Doctor Strange navigates the multiverse to stop a new threat.",
+    "releaseDate": "2022-05-06",
+    "releaseYear": 2022,
+    "runtime": 126,
+    "genres": ["Action", "Adventure", "Fantasy"],
+    "rating": { "average": 7.6, "voteCount": 10000, "ageRating": "PG-13" },
+    "posterUrl": "/images/movies/doctor-strange-in-multiverse-of-madness.jpg",
+    "backdropUrl": "/images/movies/doctor-strange-2-backdrop.jpg",
+    "director": { "name": "Sam Raimi" },
+    "cast": [
+      { "name": "Benedict Cumberbatch", "character": "Doctor Strange" },
+      { "name": "Elizabeth Olsen", "character": "Wanda Maximoff" }
+    ],
+    "gallery": ["/images/movies/doctor-strange-2-1.jpg"],
+    "trailer": "https://www.youtube.com/watch?v=aWzlQ2N6qqg",
+    "category": "popular"
   }
 ]
