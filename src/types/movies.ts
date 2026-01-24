@@ -1,4 +1,5 @@
 export type Movie = {
+    category: string;
     id: number;
     title: string;
     tagline?: string;
