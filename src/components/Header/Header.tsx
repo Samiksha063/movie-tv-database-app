@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import {Link, Navigate, useNavigate} from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 import styles from './Header.module.css';
 import SearchBar from '../SearchBar/SearchBar';
@@ -10,6 +10,13 @@ export default function Header(){
     function handleLogout(){
         logout();
     }
+
+    const navigate = useNavigate();
+
+    function handleSearch(query: string){
+        navigate(`/search?q=${encodeURIComponent(query)}`);
+    }
+    
     return(
         <>
             <header className={styles.header}>
@@ -20,7 +27,7 @@ export default function Header(){
                         <Link to = "/" className={styles.logo}>MovieHub</Link>
                         </div>
                         
-                        <SearchBar />
+                        <SearchBar onSearch={handleSearch} />
 
                         <div className={styles.navList}>
                             <li><Link to = "/" className={styles.navLinks}>Home</Link></li> 

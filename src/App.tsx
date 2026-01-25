@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import MainLayout from './components/layout/MainLayout/MainLayout';
 import AuthLayout from './components/layout/AuthLayout/AuthLayout';
+import Search from './pages/Search/Search';
 import Home from './pages/Home/Home';
 import Movies from './pages/Movies/Movies';
 import MovieDetail from './pages/MovieDetail/MovieDetail';
@@ -17,6 +18,7 @@ export default function App() {
         <Route path='/' element={<Home />} />
         <Route path='/movies' element={<Movies />} />
         <Route path='/movies/:id' element={<MovieDetail/>} />
+        <Route path='/search' element={<Search />}/>
       </Route>
 
       <Route element={<AuthLayout/>}>

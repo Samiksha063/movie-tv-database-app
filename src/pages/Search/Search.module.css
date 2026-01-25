@@ -1,0 +1,30 @@
+.searchPage {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.searchPage h2 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+  color: black;
+}
+
+.searchPage p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.noResults {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 40px;
+  text-align: center;
+}
