@@ -2,12 +2,16 @@ let db: IDBDatabase | null = null;
 
 export function initDB(): Promise<IDBDatabase> {
   return new Promise((resolve, reject) => {
-    const request = indexedDB.open("movie_tv_app_db", 2);
+    const request = indexedDB.open("movie_tv_app_db", 3);
 
     request.onupgradeneeded = (event) => {
       const database = (event.target as IDBOpenDBRequest).result;
       if (!database.objectStoreNames.contains("movies")) {
         database.createObjectStore("movies", { keyPath: "id" });
+      }
+
+      if (!database.objectStoreNames.contains("tvShows")) {
+        database.createObjectStore("tvShows", { keyPath: "id" });
       }
     };
 

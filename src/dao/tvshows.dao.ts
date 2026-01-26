@@ -1,28 +1,28 @@
 import { getDB } from "../data/db";
-import type { Movie } from "../types/movies";
+import type { TvShow } from "../types/tvshows";
 
-export function addMovie(movie: Movie){
+export function addTvShow(tvShow: TvShow){
     const db = getDB();
-    const transaction = db.transaction("movies","readwrite");
-    const store = transaction.objectStore("movies");
+    const transaction = db.transaction("tvShows","readwrite");
+    const store = transaction.objectStore("tvShows");
 
-    store.put(movie);
+    store.put(tvShow);
 
     transaction.oncomplete = () => {
-        console.log(`Movie: "${movie.title}" added successfully`);
+        console.log(`TvShow: "${tvShow.title}" added successfully`);
 
     }
 
     transaction.onerror = () => {
-        console.log("Failed to add movie", transaction.error);
+        console.log("Failed to add tv show", transaction.error);
     }
 }
 
-export function getAllMovies() : Promise<Movie[]>{
+export function getAllTvShows() : Promise<TvShow[]>{
     return new Promise((resolve, reject) => {
         const db = getDB();
-        const transaction = db.transaction("movies","readonly");
-        const store = transaction.objectStore("movies");
+        const transaction = db.transaction("tvShows","readonly");
+        const store = transaction.objectStore("tvShows");
 
         const request = store.getAll();
 
@@ -36,12 +36,12 @@ export function getAllMovies() : Promise<Movie[]>{
     })
 }
 
-export function getMovieById(id:number) : Promise<Movie | undefined>{
+export function getTvShowsById(id:number) : Promise<TvShow | undefined>{
 
     return new Promise((resolve, reject) => {
         const db = getDB();
-        const transaction = db.transaction("movies", "readonly");
-        const store = transaction.objectStore("movies");
+        const transaction = db.transaction("tvShows", "readonly");
+        const store = transaction.objectStore("tvShows");
         const request = store.get(id);
 
         request.onsuccess = () => {
@@ -55,12 +55,12 @@ export function getMovieById(id:number) : Promise<Movie | undefined>{
     })
 }
 
-export function movieExists(id:number) : Promise<boolean>{
+export function tvShowExists(id:number) : Promise<boolean>{
 
     return new Promise((resolve, reject) => {
         const db = getDB();
-        const transaction = db.transaction("movies", "readonly");
-        const store = transaction.objectStore("movies");
+        const transaction = db.transaction("tvShows", "readonly");
+        const store = transaction.objectStore("tvShows");
         const request = store.get(id);
         
         request.onsuccess = () => {

@@ -1,4 +1,4 @@
-import {Link, Navigate, useNavigate} from 'react-router-dom';
+import {Link,useNavigate} from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 import styles from './Header.module.css';
 import SearchBar from '../SearchBar/SearchBar';

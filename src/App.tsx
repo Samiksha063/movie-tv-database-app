@@ -5,6 +5,8 @@ import Search from './pages/Search/Search';
 import Home from './pages/Home/Home';
 import Movies from './pages/Movies/Movies';
 import MovieDetail from './pages/MovieDetail/MovieDetail';
+import TvShows from './pages/TvShows/TvShows';
+import TvShowDetail from './pages/TvShowDetail/TvShowDetail';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 
@@ -18,6 +20,8 @@ export default function App() {
         <Route path='/' element={<Home />} />
         <Route path='/movies' element={<Movies />} />
         <Route path='/movies/:id' element={<MovieDetail/>} />
+        <Route path='/tvshows' element={<TvShows/>} />
+        <Route path='/tvShow/:id' element={<TvShowDetail/>} />
         <Route path='/search' element={<Search />}/>
       </Route>
 
