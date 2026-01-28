@@ -1,9 +1,11 @@
-import type { Movie } from "../../types/movies";
+import type { Media } from "../../types/media";
 
-export function searchMovies(movies: Movie[], query: string){
+export function searchMedia(items: Media[], query: string){
     const lowerQuery = query.toLowerCase();
 
-    return movies.filter(movie => movie.title.toLowerCase().includes(lowerQuery) );
+    if(!lowerQuery) return [];
+
+    return items.filter(item => item.title.toLowerCase().includes(lowerQuery) );
     
 
 }

@@ -1,28 +1,36 @@
 import { useSearchParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-import type { Movie } from "../../types/movies";
-import { getAllMovies } from "../../dao/movies.dao";
-import { searchMovies } from "../../utils/filter/searchFilter";
+import type { Media } from "../../types/media";
 
-import MovieCard from "../../components/MovieCard/MovieCard";
+import { getAllMovies } from "../../dao/movies.dao";
+import { getAllTvShows } from "../../dao/tvshows.dao";
+import { searchMedia } from "../../utils/filter/searchFilter";
+
+import MediaCard from "../../components/MediaCard/MediaCard";
 import styles from './Search.module.css';
 
 export default function Search() {
     const [searchParams] = useSearchParams();
     const query = searchParams.get("q") || "";
 
-    const [movies, setMovies] = useState<Movie[]>([]);
+    const [allMedia, setAllMedia] = useState<Media[]>([]);
 
     useEffect(()=>{
-        async function loadMovies(){
+        async function loadMedia(){
             const allMovies = await getAllMovies();
-            setMovies(allMovies);
+            const allTvShows = await getAllTvShows();
+            
+            const moviesAsMedia: Media[] = allMovies.map(movie => ({...movie,type: "movie"}));
+
+            const tvShowsAsMedia: Media[] = allTvShows.map(tv => ({...tv,type: "tvShow"}));
+
+            setAllMedia([...moviesAsMedia, ...tvShowsAsMedia]);
         }
-        loadMovies();
+        loadMedia();
     },[]);
 
-    const results = query ? searchMovies(movies,query) : [] ;
+    const results = query ? searchMedia(allMedia,query) : allMedia ;
 
     return (
         <div className={styles.searchPage}>
@@ -31,8 +39,8 @@ export default function Search() {
 
             {results.length > 0 ? (
                 <div className={styles.grid}>
-                {results.map((movie) => (
-                    <MovieCard key={movie.id} movie={movie} />
+                {results.map((media) => (
+                    <MediaCard key={media.id} media={media} />
                 ))}
                 </div>
             ) : 
