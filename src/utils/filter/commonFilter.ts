@@ -1,4 +1,4 @@
-import type { Movie } from "../../types/movies";
+import type { Media } from "../../types/media";
 
 export type FilterState = {
     category ?: string;
@@ -8,7 +8,7 @@ export type FilterState = {
     minRating : number | undefined ;
 }
 
-export function filterItems(items: Movie[], filters: FilterState){
+export function filterItems(items: Media[], filters: FilterState){
     let result = items;
 
     const { category, genres, releaseFrom, releaseTo, minRating } = filters;

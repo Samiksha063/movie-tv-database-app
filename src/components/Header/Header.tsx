@@ -31,8 +31,8 @@ export default function Header(){
 
                         <div className={styles.navList}>
                             <li><Link to = "/" className={styles.navLinks}>Home</Link></li> 
-                            <li><Link to = "/movies" className={styles.navLinks}>Movies</Link></li> 
-                            <li><Link to = "/tvshows" className={styles.navLinks}>Tv Shows</Link></li> 
+                            <li><Link to = "/media/movie" className={styles.navLinks}>Movies</Link></li> 
+                            <li><Link to = "/media/tvShow" className={styles.navLinks}>Tv Shows</Link></li> 
                             <li><Link to = "/watchlist" className={styles.navLinks}>Watchlist</Link></li>
                             {user ? (
                                 <li>
