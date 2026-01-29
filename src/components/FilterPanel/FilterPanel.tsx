@@ -1,30 +1,32 @@
 type FilterPanelProp = {
     category ?: {value: string, label:string}[];
+    selectedCategory ?: string;
     onCategoryChange ?: (category: string) => void;
 
     genres ?: string[];
+    selectedGenres ?: string[];
     onGenreChange ?: (selectedGenres: string[]) => void;
 
     onReleaseFromChange ?: (value: string) => void;
     onReleaseToChange ?: (value: string) => void;
 
+    selectedRating :number | undefined
     onMinRatingChange ?: (value: number | undefined) => void;
     
     onSearchClick ?: () => void;
 }
 
-import { useState } from 'react';
 import styles from './FilterPanel.module.css';
 
 export default function FilterPanel({
-    category, onCategoryChange,
-    genres, onGenreChange,
+    category, selectedCategory, onCategoryChange,
+    genres, selectedGenres=[], onGenreChange,
     onReleaseFromChange, onReleaseToChange,
-    onMinRatingChange,
+    selectedRating, onMinRatingChange,
     onSearchClick
     }: FilterPanelProp){
 
-        const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
+        // const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
 
         function toggleGenre(genre: string){
             let newGenres : string[];
@@ -35,7 +37,6 @@ export default function FilterPanel({
                 newGenres = [...selectedGenres, genre];
             }
 
-            setSelectedGenres(newGenres);
             onGenreChange?.(newGenres);
 
         }
@@ -54,7 +55,7 @@ export default function FilterPanel({
         
                 {category.map(cat => (
                     <div key={cat.value} className={styles.radioOption}>
-                    <input type="radio" name="category" id={cat.value} value={cat.value} defaultChecked={cat.value === 'all'} onChange={() => onCategoryChange && onCategoryChange(cat.value)} />
+                    <input type="radio" name="category" id={cat.value} value={cat.value} checked = {selectedCategory === cat.value}  onChange={() => onCategoryChange && onCategoryChange(cat.value)} />
                     <label htmlFor={cat.value}>{cat.label}</label>
                 </div>
             ))}
@@ -83,7 +84,6 @@ export default function FilterPanel({
                       updatedGenres = [...selectedGenres, genre];
                     }
 
-                    setSelectedGenres(updatedGenres);
                     onGenreChange?.(updatedGenres);
                 }}
                 />
@@ -116,37 +116,20 @@ export default function FilterPanel({
     <div className={styles.ratingSection}>
         <p className={styles.sectionHeader}>Minimum Rating</p>
         <div className={styles.ratingGroup}>
-            <div className={styles.radioOption}>
-                <input 
-                    type="radio" 
-                    name='rating' 
-                    id='rall' 
-                    defaultChecked 
-                    onChange={() => onMinRatingChange?.(undefined)}
-                    />
-                <label htmlFor="rall">Any Rating</label>
-            </div>
+            {[undefined, 7, 8, 9].map(r => (
+            <div key={r ?? 'any'} className={styles.radioOption}>
+              <input
+                type="radio"
+                name="rating"
+                id={r !== undefined ? `r${r}` : 'rall'}
+                checked={selectedRating === r}
+                onChange={() => onMinRatingChange?.(r)}
+              />
+              <label htmlFor={r !== undefined ? `r${r}` : 'rall'}>{r ? `${r}+ Stars` : 'Any Rating'}</label>
 
-            <div className={styles.radioOption}>
-                <input type="radio" name='rating' id='r7'
-                    onChange={() => onMinRatingChange?.(7)}
-                />
-                <label htmlFor="r7">7+ Stars</label>
             </div>
+          ))}
 
-            <div className={styles.radioOption}>
-                <input type="radio" name='rating' id='r8' 
-                    onChange={() => onMinRatingChange?.(8)}
-                />
-                <label htmlFor="r8">8+ Stars</label>
-            </div>
-
-            <div className={styles.radioOption}>
-                <input type="radio" name='rating' id='r9' 
-                    onChange={() => onMinRatingChange?.(9)}
-                />
-                <label htmlFor="r9">9+ Stars</label>
-            </div>
 
         </div>
     </div>

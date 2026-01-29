@@ -57,6 +57,7 @@ export default function Media(){
                 posterUrl: m.posterUrl,
                 releaseYear: m.releaseYear,
                 type: "movie",
+                category: m.category,
                 genres: m.genres || [],
                 releaseDate: m.releaseDate || `${m.releaseYear}-01-01`,
                 rating: m.rating || { average: 0, voteCount: 0, ageRating: "" }
@@ -72,6 +73,7 @@ export default function Media(){
                 posterUrl: tv.posterUrl,
                 releaseYear: tv.releaseYear,
                 type: "tvShow",
+                category: tv.category,
                 genres: tv.genres || [],
                 releaseDate: tv.releaseDate || `${tv.releaseYear}-01-01`,
                 rating: tv.rating || { average: 0, voteCount: 0, ageRating: "" }
@@ -98,12 +100,14 @@ export default function Media(){
             {value: 'nowPlaying', label: 'Now Playing'},
             {value: 'upcoming', label: 'Upcoming'},
           ]}
+          selectedCategory={filters.category}
             onCategoryChange={(category) =>
               setFilters(prev => ({...prev, category}))
             }
 
             // genres
             genres={allGenres}
+            selectedGenres={filters.genres}
             onGenreChange={(genres) => 
               setFilters(prev => ({...prev, genres}))
             }
@@ -118,6 +122,7 @@ export default function Media(){
             }
 
             //rating
+            selectedRating={filters.minRating}
             onMinRatingChange={(value)=> 
               setFilters(prev => ({...prev, minRating: value}))}
 
